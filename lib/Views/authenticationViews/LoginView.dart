@@ -16,6 +16,8 @@ class _LoginView extends State<LoginView> {
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
+      backgroundColor: Colors.white,
+
       bottomSheet: Container(
         color: Colors.white,
         padding: EdgeInsets.symmetric(horizontal: 8),

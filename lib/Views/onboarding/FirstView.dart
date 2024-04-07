@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FirstView extends StatelessWidget {
   const FirstView({super.key});
@@ -6,6 +7,7 @@ class FirstView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -15,11 +17,12 @@ class FirstView extends StatelessWidget {
               height: 30,
             ),
 
-            Text("HOMEY",
-              style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black
+            Text(
+              "HOMEY",
+              style: GoogleFonts.nunito(
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
               ),
             ),
 
@@ -39,7 +42,7 @@ class FirstView extends StatelessWidget {
        Homey application    
                            ''',
                         key: ValueKey<String>('homey'),
-                        style: TextStyle(
+                        style: GoogleFonts.nunito(
                             fontSize: 20,
                             fontWeight: FontWeight.w400,
                             color: Colors.black
@@ -50,14 +53,14 @@ class FirstView extends StatelessWidget {
                 } else {
                   return Center(
                     child: AnimatedSwitcher(
-                      duration: Duration(milliseconds: 500),
+                      duration: Duration(milliseconds: 800),
                       child: Text(
                         '''
   Find your dream home with 
                      ease             
                          ''',
                         key: ValueKey<String>('ease'),
-                        style: TextStyle(
+                        style: GoogleFonts.nunito(
                             fontSize: 20,
                             fontWeight: FontWeight.w400,
                             color: Colors.black

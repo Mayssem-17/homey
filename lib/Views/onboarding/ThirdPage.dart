@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ThirdView extends StatelessWidget {
   const ThirdView({super.key});
@@ -6,7 +7,10 @@ class ThirdView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: ListView(
+        child: Container(
+        color: Colors.white,
+        child: ListView(
+
         padding: EdgeInsets.symmetric(vertical:30,horizontal: 20),
         children: [
           buildFeature(
@@ -31,7 +35,7 @@ class ThirdView extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ),);
   }
 
   Widget buildFeature(String imageName, String description, String imagePath) {
@@ -60,7 +64,7 @@ class ThirdView extends StatelessWidget {
               children: [
                 Text(
                   imageName,
-                  style: TextStyle(
+                  style: GoogleFonts.nunito(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
@@ -69,7 +73,7 @@ class ThirdView extends StatelessWidget {
                 SizedBox(height: 10),
                 Text(
                   description,
-                  style: TextStyle(
+                  style: GoogleFonts.nunito(
                     fontSize: 16,
                     fontWeight: FontWeight.w300,
                     color: Colors.black,
@@ -81,5 +85,6 @@ class ThirdView extends StatelessWidget {
         ],
       ),
     );
+
   }
 }
