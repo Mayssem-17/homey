@@ -69,6 +69,7 @@ flutter:
    - assets/images/3d-view-map.jpg
    - assets/images/logo.png
    - assets/images/google.png
+   - assets/images/logo2.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

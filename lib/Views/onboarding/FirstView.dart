@@ -13,22 +13,19 @@ class FirstView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("assets/images/logo.png"),
-            SizedBox(
-              height: 30,
-            ),
-
-            Text(
-              "HOMEY",
-              style: GoogleFonts.nunito(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
+            Padding(
+              padding: EdgeInsets.only(top: 100,bottom: 30), // Add padding to the bottom
+              child:   Text(
+                "HOMEY",
+                style: GoogleFonts.nunito(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
               ),
             ),
 
-            SizedBox(
-              height: 30,
-            ),
+
             FutureBuilder(
               future: Future.delayed(Duration(seconds: 3)),
               builder: (context, snapshot) {

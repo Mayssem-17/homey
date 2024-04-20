@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'SignUp.dart';
 
 class LoginView extends StatefulWidget {
   LoginView({Key? key});
@@ -43,6 +45,18 @@ class _LoginView extends State<LoginView> {
               children: [
                 Image.asset("assets/images/logo.png"),
                 SizedBox(height: 10),
+
+                Padding(
+                  padding: EdgeInsets.only(bottom: 30), // Add padding to the bottom
+                  child: Text(
+                    "Welcome to Homey!",
+                    style: GoogleFonts.nunito(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
                 TextFormField(
                   controller: _usernameController,
                   decoration: InputDecoration(
@@ -114,8 +128,9 @@ class _LoginView extends State<LoginView> {
                 ),
                 TextButton(
                   onPressed: () {
-                    // Navigate to another page for registration
-                    // Navigator.push(context, MaterialPageRoute(builder: (context) => RegistrationView()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SignUp()),);
                   },
                   child: Text(
                     'Create an Account',
