@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../Navigation_menu.dart';
 import 'SignUp.dart';
 
 class LoginView extends StatefulWidget {
@@ -27,7 +28,9 @@ class _LoginView extends State<LoginView> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             TextButton(
-                onPressed: (){},
+                onPressed: (){ Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NavigationMenu()),); },
                 child: Text("take a look",
                 style:TextStyle(
                   color: Colors.black
@@ -47,7 +50,7 @@ class _LoginView extends State<LoginView> {
                 SizedBox(height: 10),
 
                 Padding(
-                  padding: EdgeInsets.only(bottom: 30), // Add padding to the bottom
+                  padding: EdgeInsets.only(bottom: 10), // Add padding to the bottom
                   child: Text(
                     "Welcome to Homey!",
                     style: GoogleFonts.nunito(
@@ -55,6 +58,19 @@ class _LoginView extends State<LoginView> {
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),
+
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 30), // Add padding to the bottom
+                  child: Text(
+                    "Your best place to rent, buy or sell properties. ",
+                    style: GoogleFonts.nunito(
+                      fontSize: 14,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.grey,
+                    ),
+
                   ),
                 ),
                 TextFormField(
@@ -79,7 +95,9 @@ class _LoginView extends State<LoginView> {
                     // Implement your login logic here
                     String username = _usernameController.text;
                     String password = _passwordController.text;
-                    // You can validate inputs and perform authentication
+
+
+
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
