@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:homey/Views/Screens/widgets/card_widget.dart';
 
 import 'package:homey/Views/Screens/widgets/filter_widget.dart';
 
@@ -10,7 +11,6 @@ class ExploreScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: FilterWidget(),
     );
   }
 }
