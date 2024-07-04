@@ -2,6 +2,7 @@
 
 A new Flutter project.
 
+Mockups using figma 
 
 ![image](https://github.com/Mayssem-17/homey/assets/65128264/9f1e0b32-2ea6-417d-bd93-b9112822a45c)
 
